@@ -177,5 +177,21 @@
 		<img src="./assets/instagram.svg"/>
 	</div>
 </div>
+<script>
+     const ham = document.querySelector('.Ham');
+			window.addEventListener('scroll', () => {
+		const top = window.innerHeight * (10 / 100)+300;
+		if (window.scrollY <= top) {
+			document.querySelector(".Scroll").style.display='none';
+		
+		}
+		if (window.scrollY > top) {
+				document.querySelector(".Scroll").style.display='grid';
+		}
+		});
+		ham.addEventListener('click',() => {
+			console.log('clicking');
+		})
+</script>
     </body>
 </html>
