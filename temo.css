@@ -93,7 +93,7 @@ section {
 	z-index: -1;
 }
 #Orange::before {
-	background-color: #F98404;
+	background-color: #f98404;
 	z-index: -1;
 }
 .Hover {
@@ -332,5 +332,11 @@ section .container {
 	}
 	.heading p {
 		font-size: 14px;
+	}
+	.contentBx h3 {
+		font-size: 10px;
+	}
+	.contentBx span {
+		font-size: 8px;
 	}
 }
