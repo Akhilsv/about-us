@@ -228,7 +228,7 @@ section {
 	cursor: pointer;
 	position: relative;
 	z-index: 1;
-	color: rgb(236, 69, 208);
+	color: rgb(255, 255, 255);
 	font-size: 17px;
 	border-radius: 5px;
 	margin: 0 5px;
@@ -236,7 +236,7 @@ section {
 	white-space: nowrap;
 }
 .wrapper nav label:hover {
-	background: rgba(171, 23, 184, 0.3);
+	background: rgba(255, 255, 255, 0.3);
 }
 #home:checked ~ nav label.home,
 #blog:checked ~ nav label.blog,
@@ -247,7 +247,7 @@ section {
 #two:checked ~ nav label.two,
 #three:checked ~ nav label.three,
 #four:checked ~ nav label.four {
-	color: #fff;
+	color: rgb(0, 0, 0);
 }
 nav label i {
 	padding-right: 7px;
@@ -260,7 +260,7 @@ nav .slider {
 	bottom: 0;
 	z-index: 0;
 	border-radius: 5px;
-	background: rgb(236, 69, 208);
+	background: rgb(255, 255, 255);
 	transition: all 0.3s ease;
 }
 input[type='radio'] {
@@ -363,14 +363,12 @@ section .container {
 		justify-content: center;
 	}
 	nav .slider {
-		position: absolute;
+
 		height: 12.5%;
 		width: 100%;
 		top: 0;
-		z-index: 0;
-		border-radius: 5px;
-		background: rgb(236, 69, 208);
-		transition: all 0.3s ease;
+	
+	
 	}
 	#blog:checked ~ nav .slider {
 		top: 12.5%;
