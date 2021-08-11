@@ -334,7 +334,11 @@ section .container {
 	#blog:checked ~ section .content-2,
 	#code:checked ~ section .content-3,
 	#help:checked ~ section .content-4,
-	#about:checked ~ section .content-5 {
+	#about:checked ~ section .content-5,
+	#one:checked ~ section .content-6,
+	#two:checked ~ section .content-7,
+	#three:checked ~ section .content-8,
+	#four:checked ~ section .content-9 {
 		display: grid;
 	}
 	.wrapper nav label {
@@ -363,12 +367,9 @@ section .container {
 		justify-content: center;
 	}
 	nav .slider {
-
 		height: 12.5%;
 		width: 100%;
 		top: 0;
-	
-	
 	}
 	#blog:checked ~ nav .slider {
 		top: 12.5%;
