@@ -218,6 +218,7 @@ section {
 	display: flex;
 	align-items: center;
 	background-color: #333;
+	user-select: none;
 }
 .wrapper nav label {
 	display: block;
