@@ -76,7 +76,7 @@ section {
 	min-width: 80px;
 	background: rgba(24, 22, 22, 0.74);
 	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-	border-radius: 15px;
+	border-radius: 5px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -85,21 +85,22 @@ section {
 }
 .Hover {
 	z-index: 2;
-	border-radius: 15px;
+	border-radius: 5px;
 }
 .Hover::before {
 	content: '';
-	width: 100%;
-	height: 2px;
+	width: 2px;
+	height: 100%;
 	background-color: #03ef62;
 	position: absolute;
 	top: 0;
+	left: 0;
 	transition: all 0.8s ease;
 	z-index: 0;
 	border-radius: 15px;
 }
 .Box:hover.Hover::before {
-	height: 100%;
+	width: 100%;
 	z-index: -1;
 }
 .Box .content {
@@ -141,9 +142,9 @@ section {
 	text-align: center;
 	margin: 20px 0 10px;
 	line-height: 1.1em;
-	transition:all 0.5s ease;
+	transition: all 0.5s ease;
 }
-.Box:hover .contentBx h3{
+.Box:hover .contentBx h3 {
 	color: black;
 }
 .Box .content .contentBx h3 span {
@@ -215,7 +216,11 @@ section {
 #blog:checked ~ nav label.blog,
 #code:checked ~ nav label.code,
 #help:checked ~ nav label.help,
-#about:checked ~ nav label.about {
+#about:checked ~ nav label.about,
+#one:checked ~ nav label.one,
+#two:checked ~ nav label.two,
+#three:checked ~ nav label.three,
+#four:checked ~ nav label.four {
 	color: #fff;
 }
 nav label i {
@@ -224,7 +229,7 @@ nav label i {
 nav .slider {
 	position: absolute;
 	height: 100%;
-	width: 25%;
+	width: 12.5%;
 	left: 0;
 	bottom: 0;
 	z-index: 0;
@@ -236,16 +241,28 @@ input[type='radio'] {
 	display: none;
 }
 #blog:checked ~ nav .slider {
-	left: 25%;
+	left: 12.5%;
 }
 #code:checked ~ nav .slider {
-	left: 50%;
+	left: 25%;
 }
 #help:checked ~ nav .slider {
-	left: 75%;
+	left: 37.5%;
 }
 #about:checked ~ nav .slider {
-	left: 100%;
+	left: 50%;
+}
+#one:checked ~ nav .slider {
+	left: 50%;
+}
+#two:checked ~ nav .slider {
+	left: 62.5%;
+}
+#three:checked ~ nav .slider {
+	left: 74.5%;
+}
+#four:checked ~ nav .slider {
+	left: 87%;
 }
 section .container {
 	display: none;
@@ -254,7 +271,11 @@ section .container {
 #blog:checked ~ section .content-2,
 #code:checked ~ section .content-3,
 #help:checked ~ section .content-4,
-#about:checked ~ section .content-5 {
+#about:checked ~ section .content-5,
+#one:checked ~ section .content-6,
+#two:checked ~ section .content-7,
+#three:checked ~ section .content-8,
+#four:checked ~ section .content-9 {
 	display: flex;
 	min-width: 100%;
 }
@@ -276,7 +297,7 @@ section .container {
 		width: 90px;
 		height: 90px;
 	}
-	.Board_container  .Box .content .contentBx h3,
+	.Board_container .Box .content .contentBx h3,
 	.container .Box .content .contentBx h3 {
 		font-size: 14px;
 	}
@@ -293,10 +314,10 @@ section .container {
 	.wrapper nav label {
 		font-size: 12px;
 	}
-	.heading{
+	.heading {
 		font-size: 1.3rem;
 	}
-	.heading p{
+	.heading p {
 		font-size: 14px;
-	} 
+	}
 }
