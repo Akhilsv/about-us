@@ -82,6 +82,19 @@ section {
 	align-items: center;
 	margin: 20px;
 	backdrop-filter: blur(10px);
+	z-index: 3;
+}
+#Yellow::before {
+	background-color: #fff338;
+	z-index: -1;
+}
+#Blue::before {
+	background-color: #64c9cf;
+	z-index: -1;
+}
+#Orange::before {
+	background-color: #F98404;
+	z-index: -1;
 }
 .Hover {
 	z-index: 2;
