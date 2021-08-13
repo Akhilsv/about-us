@@ -178,20 +178,18 @@
 	</div>
 </div>
 <script>
-     const ham = document.querySelector('.Ham');
-			window.addEventListener('scroll', () => {
-		const top = window.innerHeight * (10 / 100)+300;
-		if (window.scrollY <= top) {
-			document.querySelector(".Scroll").style.display='none';
-		
-		}
-		if (window.scrollY > top) {
-				document.querySelector(".Scroll").style.display='grid';
-		}
-		});
-		ham.addEventListener('click',() => {
-			console.log('clicking');
+      const ham = document.querySelector('.Ham');
+		  const Close=document.querySelector(".Close");
+		    const DropMenu =document.querySelector('.dropMenu')
+		  ham.addEventListener('click',() => {
+			DropMenu.classList.add("MenuAnimation")
+
 		})
+		Close.addEventListener('click',() => {
+			DropMenu.classList.remove('MenuAnimation')
+
+		})
+		
 </script>
     </body>
 </html>

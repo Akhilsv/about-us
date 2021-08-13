@@ -689,6 +689,17 @@
 					Arrow.style.transform = 'rotate(0deg)';
 				}
 			};
+			 const ham = document.querySelector('.Ham');
+		  const Closes=document.querySelector(".Close");
+		    const DropMenu =document.querySelector('.dropMenu')
+		  ham.addEventListener('click',() => {
+			DropMenu.classList.add("MenuAnimation")
+
+		})
+		Closes.addEventListener('click',() => {
+			DropMenu.classList.remove('MenuAnimation')
+
+		})
 		</script>
 	</body>
 </html>
